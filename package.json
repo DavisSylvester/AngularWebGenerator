@@ -13,5 +13,10 @@
   "dependencies": {
     "yeoman-generator": "^0.20.2"
   },
-  "files": ["app"]
+  "files": [
+    "app"
+  ],
+  "devDependencies": {
+    "mkdirp": "^0.5.1"
+  }
 }
