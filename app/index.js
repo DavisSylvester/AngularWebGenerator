@@ -10,31 +10,46 @@ module.exports = generators.Base.extend({
 
 	method1: function(){
 
-		console.log('Method1 has run!');
-
-		console.log('Dest Dir: ' + destDir);
-		console.log('Source Dir: ' + srcDir);	
-
-		var destDir = this.destinationRoot();
+       	var destDir = this.destinationRoot();
 		var srcDir = this.sourceRoot();
 
 		var appDir = destDir + '/app/';
 		var sourceDir = destDir + '/src/';
+		var images = appDir + 'assets/imgs/';
+		var css = appDir + 'assets/css/';
+		var js = appDir + 'assets/js/';
+
+		var srcLESS = sourceDir + '/assets/less';
+		var srcCSS = sourceDir + '/assets/css';
 
 		mkdir(appDir);
 		mkdir(sourceDir);
+		mkdir(images);
+		mkdir(css);
+		mkdir(js);
+		mkdir(srcLESS);
+		mkdir(srcCSS);
 
+		console.log('SourceDir: ' + srcDir);
+		console.log('DestDir: ' + destDir);
+		console.log('Method1 has run!');
 	},
 
 	makeDirectoryStructure: function(){
-		var destDir = this.destinationRoot();
-		var srcDir = this.sourceRoot();
+		var destDir1 = this.destinationRoot();
+		var srcDir1 = this.sourceRoot();
 
-		var appDir = destDir + '/app/';
-		var sourceDir = destDir + '/src/';
+		var appDir = destDir1 + '/app/';
+		var sourceDir = destDir1 + '/src/';
 
-		mkdir(appDir);
-		mkdir(sourceDir);
+		var fs = this.fs;
+
+		fs.copy(srcDir1 + '/package.json', appDir + '../package.json');
+		fs.copy(srcDir1 + '/bower.json', appDir + '../bower.json');
+		fs.copy(srcDir1 + '/.bowerrc', appDir + '../.bowerrc');
+		fs.copy(srcDir1 + '/gulpfile.js', appDir + '../gulpfile.js');
+
+		console.log('DestDir: ' + destDir1);
 	}
 
 
