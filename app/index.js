@@ -47,7 +47,9 @@ module.exports = generators.Base.extend({
 		fs.copy(srcDir1 + '/package.json', appDir + '../package.json');
 		fs.copy(srcDir1 + '/bower.json', appDir + '../bower.json');
 		fs.copy(srcDir1 + '/.bowerrc', appDir + '../.bowerrc');
-		fs.copy(srcDir1 + '/gulpfile.js', appDir + '../gulpfile.js');
+		fs.copy(srcDir1 + '/gulpfie.js', appDir + '../gulpfile.js');
+		fs.copy(srcDir1 + '/index.html', appDir + 'index.html');
+		
 
 		console.log('DestDir: ' + destDir1);
 	}

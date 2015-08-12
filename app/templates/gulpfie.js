@@ -5,6 +5,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var minicss = require('gulp-minify-css');
 var sourcemaps = require('gulp-sourcemaps');
 var webserver = require('gulp-webserver');
+var inject = require('gulp-inject');
 
 
 var lessFiles = 'src/assets/**/*.less';
@@ -27,6 +28,24 @@ gulp.task('webServerDev', function () {
                 host: 'localhost',
                 port: 5555
             }));
+});
+
+gulp.task('InstallAngularRequirement', function(){
+    var bowerRoot = 'app/bower_components/';
+    var jQuerySrc = bowerRoot + 'jquery/dist/jquery.min.js';
+    var angular = bowerRoot + 'angular/angular.min.js';
+    var uiRouter = bowerRoot + 'ui-router/release/angular-ui-router.js';
+
+    var appRoot = 'app/';
+    var srcIndex = appRoot + 'index.html';
+
+    var target = gulp.src(srcIndex);
+    var sources = gulp.src([jQuerySrc, angular, uiRouter], { read: false });
+
+    return target.pipe(inject(sources))
+        .pipe(gulp.dest(appRoot));
+        
+
 });
 
 
