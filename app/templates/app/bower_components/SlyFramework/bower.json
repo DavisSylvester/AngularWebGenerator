@@ -1,0 +1,23 @@
+{
+  "name": "SlyFramework",
+  "version": "0.0.1",
+  "authors": [
+    "Davis Sylvester <davis@sylvesterllc.com>"
+  ],
+  "description": "SlyFramework HTML5 & CSS3",
+  "main": "slyFramework.css",
+  "keywords": [
+    "HTML5",
+    "CSS3"
+  ],
+  "license": "MIT",
+  "homepage": "www.davissylvester.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}

@@ -1,0 +1,27 @@
+@HeaderPadding: (@HeaderHeight - @HeaderFontSize) / 2;
+
+#Header{
+  background: rgba(211, 84, 0,1.0);//@PrimaryColor;
+  height: @HeaderHeight;
+  color: #FFF;
+  font-size: @HeaderFontSize;
+  font-family: @PrimaryHeadingFont;
+  padding-top: @HeaderPadding;
+  padding-bottom: @HeaderPadding;
+  padding-left: 1vw;
+}
+
+.hrDivider {
+  /* Background Gradient for Analagous Colors */
+      background-color: #D30016;
+    /* For WebKit (Safari, Chrome, etc) */
+    background: #D30016 -webkit-gradient(linear, left top, left bottom, from(#D37700), to(#D30016)) no-repeat;
+    /* Mozilla,Firefox/Gecko */
+    background: #D30016 -moz-linear-gradient(top, #D37700, #D30016) no-repeat;
+    /* IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D37700, endColorstr=#D30016) no-repeat;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#D37700, endColorstr=#D37700)" no-repeat;
+
+
+}

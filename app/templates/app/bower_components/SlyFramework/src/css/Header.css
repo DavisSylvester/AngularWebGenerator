@@ -1,0 +1,31 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway';
+}
+#Header {
+  background: #d35400;
+  height: 4vh;
+  color: #FFF;
+  font-size: 3vh;
+  font-family: 'Oswald';
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  padding-left: 1vw;
+}
+.hrDivider {
+  /* Background Gradient for Analagous Colors */
+  background-color: #D30016;
+  /* For WebKit (Safari, Chrome, etc) */
+  background: #d30016 -webkit-gradient(linear, left top, left bottom, from(#d37700), to(#d30016)) no-repeat;
+  /* Mozilla,Firefox/Gecko */
+  background: #d30016 -moz-linear-gradient(top, #d37700, #d30016) no-repeat;
+  /* IE 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#d37700, endColorstr=#d30016) no-repeat;
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#D37700, endColorstr=#D37700)" no-repeat;
+}

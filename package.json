@@ -17,6 +17,9 @@
     "app"
   ],
   "devDependencies": {
-    "mkdirp": "^0.5.1"
+    "chalk": "^1.1.0",
+    "mkdirp": "^0.5.1",
+    "requirejs": "^2.1.20",
+    "yosay": "^1.0.5"
   }
 }

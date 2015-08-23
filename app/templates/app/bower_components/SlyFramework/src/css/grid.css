@@ -1,0 +1,47 @@
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10 {
+  position: relative;
+  display: inline-block;
+  padding-top: .5vh;
+  padding-bottom: .5vh;
+  padding-right: .5vh;
+  padding-left: .5vh;
+}
+.col-1 {
+  width: 9.4vw;
+}
+.col-2 {
+  width: 18.8vw;
+}
+.col-3 {
+  width: 28.2vw;
+}
+.col-4 {
+  width: 37.6vw;
+}
+.col-5 {
+  width: 47vw;
+}
+.col-6 {
+  width: 56.4vw;
+}
+.col-7 {
+  width: 65.8vw;
+}
+.col-8 {
+  width: 75.2vw;
+}
+.col-9 {
+  width: 84.6vw;
+}
+.col-10 {
+  width: 94vw;
+}

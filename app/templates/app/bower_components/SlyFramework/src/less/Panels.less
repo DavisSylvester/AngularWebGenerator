@@ -1,0 +1,41 @@
+.panel{
+  position: relative;
+  display: inline-block;
+  border: 2px solid @PanelHeadingColor;
+  min-height: 2vh;
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.6vh;
+}
+
+.panel-roundSquare{
+  .panel;
+  border-top-left-radius: @PanelBorderRadius;
+  border-top-right-radius: @PanelBorderRadius;
+}
+
+.panel-rounded{
+
+  border-top-left-radius: @PanelBorderRadius;
+  border-top-right-radius: @PanelBorderRadius;
+  border-bottom-left-radius: @PanelBorderRadius;
+  border-bottom-right-radius: @PanelBorderRadius;
+  padding-bottom: @PanelBorderRadius;
+}
+
+.panel > .panel-heading {
+  position: relative;
+  background: @PanelHeadingColor;
+  margin: 0px;
+  padding: 0px;
+  padding-top: @PanelPaddingGeneral;
+  padding-bottom: @PanelPaddingGeneral;
+  padding-left: @PanelPaddingGeneral;
+  font-size: @PanelHeadingFontSize;
+  color: @PanelHeadingFontColor;
+  font-weight: 700;
+}
+
+.panel > .panel-body{
+  margin: @DefaultMargin;
+}

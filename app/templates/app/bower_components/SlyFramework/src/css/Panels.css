@@ -1,0 +1,51 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway';
+}
+.panel {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #27ae60;
+  min-height: 2vh;
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.6vh;
+}
+.panel-roundSquare {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #27ae60;
+  min-height: 2vh;
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.6vh;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.panel-rounded {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-bottom: 5px;
+}
+.panel > .panel-heading {
+  position: relative;
+  background: #27ae60;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  font-size: 1.6vh;
+  color: #ffffff;
+  font-weight: 700;
+}
+.panel > .panel-body {
+  margin: 1.5%;
+}
