@@ -1,7 +1,7 @@
 {
   "name": "generator-angularWebApp",
   "version": "1.0.0",
-  "description": "A simple Generator for Simple HTML 5 Projects with Netbeans",
+  "description": "A Basic Web Generator for Angular 1.4.x Projects with LESS, Font-Awesome and CSS3 SlyFramework",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,7 +18,11 @@
     "SlyFramework",
     "LESS"
   ],
-  "author": "Davis Sylvester",
+  "author": {
+    "name": "Davis Sylvester III",
+    "email": "dsylvesteriii@gmail.com",
+    "url": "https://bitbucket.org/dsylvester"
+  },
   "dependencies": {
     "yeoman-generator": "^0.20.2"
   },
