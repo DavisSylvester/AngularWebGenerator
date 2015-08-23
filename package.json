@@ -1,5 +1,5 @@
 {
-  "name": "generator-angularWebApp",
+  "name": "generator-dsAngularWebApp",
   "version": "1.0.0",
   "description": "A Basic Web Generator for Angular 1.4.x Projects with LESS, Font-Awesome and CSS3 SlyFramework",
   "main": "index.js",
