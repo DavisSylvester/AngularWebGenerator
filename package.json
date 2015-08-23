@@ -1,13 +1,19 @@
 {
-  "name": "generator-davis_basic",
+  "name": "generator-angularWebApp",
   "version": "1.0.0",
   "description": "A simple Generator for Simple HTML 5 Projects with Netbeans",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": "DavisSylvester/AngularWebGenerator",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "Davis",
+    "Sylvester",
+    "Angular",
+    "SlyFramework",
+    "LESS"
   ],
   "author": "Davis Sylvester",
   "dependencies": {
