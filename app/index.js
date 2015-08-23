@@ -59,8 +59,8 @@ module.exports = generators.Base.extend({
 		fs.copy(srcDir1 + '/gulpfie.js', appDir + '../gulpfile.js');
 		fs.copy(srcDir1 + '/index.html', appDir + 'index.html');
                 fs.copy(srcDir1 + '/less/custom.less', sourceDir + 'assets/less/custom.less');
-		fs.copy(srcDir1 + '/app/angularFiles/Core/app.js', appDir + 'assets/js/Core/app.js');
-                fs.copy(srcDir1 + '/app/angularFiles/Core/route.config.js', appDir + 'assets/js/Core/route.config.js');
+		fs.copy(srcDir1 + '/app/angularFiles/app.js', appDir + 'assets/js/app.js');
+                fs.copy(srcDir1 + '/app/angularFiles/routes.config.js', appDir + 'assets/js/routes.config.js');
                 fs.copy(srcDir1 + '/app/angularFiles/Core/Controller/MainController.js', appDir + 'assets/js/Core/Controller/MainController.js');
                 
                 
